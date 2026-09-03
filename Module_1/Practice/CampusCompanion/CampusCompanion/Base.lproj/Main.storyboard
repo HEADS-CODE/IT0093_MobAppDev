@@ -16,17 +16,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Campus Companion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTP-Fv-bhT">
-                                <rect key="frame" x="119" y="85" width="155" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Campus Companion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBM-up-ISx">
+                                <rect key="frame" x="20" y="119.00000000000001" width="353" height="33.666666666666671"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Campus, In Your Pocket,&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugF-dP-cf8">
+                                <rect key="frame" x="20" y="160.66666666666666" width="353" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="T82-Lj-KVO">
+                                <rect key="frame" x="121.66666666666669" y="220.66666666666663" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="0gG-UJ-vNb"/>
+                                    <constraint firstAttribute="height" constant="150" id="RvI-zI-eMm"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="T82-Lj-KVO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Vf-8z-Dtr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BBM-up-ISx" secondAttribute="trailing" constant="20" id="70J-RZ-bmH"/>
+                            <constraint firstItem="ugF-dP-cf8" firstAttribute="top" secondItem="BBM-up-ISx" secondAttribute="bottom" constant="60" id="7Sq-ww-xAa"/>
+                            <constraint firstItem="BBM-up-ISx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7oT-GR-6WP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ugF-dP-cf8" secondAttribute="trailing" constant="20" id="E9f-cm-AoO"/>
+                            <constraint firstItem="ugF-dP-cf8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="H2W-QZ-LIA"/>
+                            <constraint firstItem="ugF-dP-cf8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="M3G-oT-mNz"/>
+                            <constraint firstItem="BBM-up-ISx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="XvM-VH-DAg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ugF-dP-cf8" secondAttribute="trailing" constant="20" id="at7-w3-jes"/>
+                            <constraint firstItem="T82-Lj-KVO" firstAttribute="top" secondItem="ugF-dP-cf8" secondAttribute="bottom" constant="40" id="g2N-9d-Ynd"/>
+                            <constraint firstItem="ugF-dP-cf8" firstAttribute="top" secondItem="BBM-up-ISx" secondAttribute="bottom" constant="8" id="hJx-wK-8Ev"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="BBM-up-ISx" id="IZD-RF-5iF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -34,6 +62,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="MyLogo" width="556" height="570"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
